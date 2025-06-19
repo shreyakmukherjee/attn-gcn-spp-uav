@@ -153,5 +153,5 @@ GCNs provide a compact, explainable architecture for crop health monitoring and 
 #### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/soybean-gcn.git
-cd soybean-gcn
+git clone https://github.com/suman2896/attn-gcn-spp-uav.git
+cd gcn-code
