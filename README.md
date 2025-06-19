@@ -81,7 +81,7 @@ This dataset includes drone-captured images of soybean plants from various growt
   <tr><td>Output Classes</td><td>4</td></tr>
   <tr><td>Optimizer</td><td>Adam</td></tr>
   <tr><td>Loss Function</td><td>CrossEntropy</td></tr>
-  <tr><td>Batch Size</td><td>32</td></tr>
+  <tr><td>Batch Size</td><td>16</td></tr>
 </table>
 
   </td>
