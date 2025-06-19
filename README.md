@@ -155,3 +155,10 @@ GCNs provide a compact, explainable architecture for crop health monitoring and 
 ```bash
 git clone https://github.com/suman2896/attn-gcn-spp-uav.git
 cd attn-gcn-spp-uav
+```
+
+# Install project-specific packages
+```bash
+pip install -r requirements.txt
+```
+
