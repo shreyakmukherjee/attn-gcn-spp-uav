@@ -1,8 +1,13 @@
 <h1 > 🌿 Attention-Enhanced GCN with SPP for
  UAV-Captured Plant Imagery </h1>
 
-This repository presents a pipeline for detecting diseases in soybean leaves using **Graph Convolutional Networks (GCN)**. It classifies leaves into four categories — **Healthy**, **Rust**, **Mosaic**, and **Pest** — using a relational graph-based approach implemented in PyTorch Geometric.
+In precision agriculture, early and accurate detection of crop diseases is vital for increasing yield and minimizing losses. Traditional deep learning models such as CNNs often overlook spatial and topological relationships in plant structures, especially in high-resolution UAV-captured images.
 
+This project proposes a novel pipeline that integrates **Attention-enhanced Graph Convolutional Networks (GCNs)** with **Spatial Pyramid Pooling (SPP)** to improve plant disease classification from drone-captured soybean leaf images. The proposed model leverages:
+
+- **Graph-based representation of leaf images**, converting superpixel segments into nodes and using their connectivity as edges,
+- **Multi-head attention** to enhance feature extraction by focusing on critical disease patterns,
+- **SPP blocks** to capture multi-scale spatial features, ensuring robustness across different plant image resolutions.
 ---
 
 ## 🧾 Project Overview
