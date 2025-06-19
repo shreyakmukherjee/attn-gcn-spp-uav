@@ -6,7 +6,7 @@ This repository presents a pipeline for detecting diseases in soybean leaves usi
 ---
 
 ## 🧾 Project Overview
-<div align="center">
+<div>
 
 | Attribute              | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
@@ -25,9 +25,9 @@ This repository presents a pipeline for detecting diseases in soybean leaves usi
 
 This dataset includes drone-captured images of soybean plants from various growth stages, classified into four types based on the disease:
 
-<h3 align="center">📊 Class Distribution</h3>
+<h3 >📊 Class Distribution</h3>
 
-<table align="center">
+<table >
   <tr>
     <td align="center"><img src="Sample_Input_Images/healthy.jpg" width="120px"></td>
     <td align="center"><img src="Sample_Input_Images/rust.jpg" width="120px"></td>
@@ -50,7 +50,7 @@ This dataset includes drone-captured images of soybean plants from various growt
 ---
 
 ## 🧪 Notebook Workflow
-<div align="center">
+<div>
   
 | Step                | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -66,7 +66,7 @@ This dataset includes drone-captured images of soybean plants from various growt
 ---
 
 <h2>⚙️ Model Configuration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📈 Performance Summary</h2>
-<div align="center">
+<div>
 <table>
   <tr>
     <td>
@@ -109,17 +109,17 @@ This dataset includes drone-captured images of soybean plants from various growt
 
 ## 📊 Model Outputs
 
-<p align="center">
+<p >
   <img src="Output_Images/Accuracy_Curve.png" height="220px" style="margin-right: 10px;">
   <img src="Output_Images/Loss_Curve.png" height="220px">
 </p>
 
-<p align="center">
+<p >
   <img src="Output_Images/Confusion_Matrix.png" height="220px" style="margin-right: 10px;">
   <img src="Output_Images/ROC_Curve.png" height="220px">
 </p>
 
-<p align="center">
+<p >
   <img src="Output_Images/Graph_Visualization.png" height="220px" style="margin-right: 10px;">
   <img src="System_Architecture_Images/Flow_Diagram.png" height="220px">
 </p>
