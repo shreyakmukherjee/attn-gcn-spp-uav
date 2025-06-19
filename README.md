@@ -28,10 +28,10 @@ This dataset includes drone-captured images of soybean plants from various growt
 
 <table align="center">
   <tr>
-    <td align="center"><img src="sample_inputs/healthy.jpg" width="120px"></td>
-    <td align="center"><img src="sample_inputs/rust.jpg" width="120px"></td>
-    <td align="center"><img src="sample_inputs/mosaic.jpg" width="120px"></td>
-    <td align="center"><img src="sample_inputs/pest.jpg" width="120px"></td>
+    <td align="center"><img src="Sample_Input_Images/healthy.jpg" width="120px"></td>
+    <td align="center"><img src="Sample_Input_Images/rust.jpg" width="120px"></td>
+    <td align="center"><img src="Sample_Input_Images/mosaic.jpg" width="120px"></td>
+    <td align="center"><img src="Sample_Input_Images/pest.jpg" width="120px"></td>
   </tr>
   <tr>
     <td align="center"><b>Healthy</b></td>
@@ -109,18 +109,18 @@ This dataset includes drone-captured images of soybean plants from various growt
 ## 📊 Model Outputs
 
 <p align="center">
-  <img src="outputs/accuracy_curve.png" height="220px" style="margin-right: 10px;">
-  <img src="outputs/loss_curve.png" height="220px">
+  <img src="Output_Images/Accuracy_Curve.png" height="220px" style="margin-right: 10px;">
+  <img src="Output_Images/Loss_Curve.png" height="220px">
 </p>
 
 <p align="center">
-  <img src="outputs/confusion_matrix.png" height="220px" style="margin-right: 10px;">
-  <img src="outputs/roc_curve.png" height="220px">
+  <img src="Output_Images/Confusion_Matrix.png" height="220px" style="margin-right: 10px;">
+  <img src="Output_Images/ROC_Curve.png" height="220px">
 </p>
 
 <p align="center">
-  <img src="outputs/graph_visualization.png" height="220px" style="margin-right: 10px;">
-  <img src="outputs/flow_diagram.png" height="220px">
+  <img src="Output_Images/Graph_Visualization.png" height="220px" style="margin-right: 10px;">
+  <img src="System_Architecture_Images/Flow_Diagram.png" height="220px">
 </p>
 
 ---
