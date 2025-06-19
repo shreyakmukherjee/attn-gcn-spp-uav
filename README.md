@@ -1,4 +1,5 @@
-<h1 align="center"> 🌿 Soybean Leaf Disease Detection Using Graph Convolutional Networks (GCN) in PyTorch </h1>
+<h1 > 🌿 Attention-Enhanced GCN with SPP for
+ UAV-Captured Plant Imagery </h1>
 
 This repository presents a pipeline for detecting diseases in soybean leaves using **Graph Convolutional Networks (GCN)**. It classifies leaves into four categories — **Healthy**, **Rust**, **Mosaic**, and **Pest** — using a relational graph-based approach implemented in PyTorch Geometric.
 
