@@ -6,16 +6,42 @@ This repository presents a pipeline for detecting diseases in soybean leaves usi
 ---
 
 ## 🧾 Project Overview
-<div>
+<div style="width:100%; overflow-x:auto; margin:20px 0; font-family:Arial, sans-serif; box-shadow:0 2px 8px rgba(0,0,0,0.1); border-radius:8px;">
 
-| Attribute              | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| 📚 Framework           | PyTorch, PyTorch Geometric, Scikit-learn                                    |
-| 🧠 Models Used         | Graph Convolutional Network (GCN), Relational GCN                           |
-| 📷 Input Format        | Drone-captured Images (~256×256 px)                                         |
-| 🎯 Output              | 4-Class Image Classification                                                 |
-| 🧪 File                | `gcn-code.ipynb`                                                             |
-| 📁 Dataset Source      | [Soybean Leaf Dataset (Kaggle)](https://data.mendeley.com/datasets/hkbgh5s3b7/1) |
+<table style="width:100%; border-collapse:collapse;">
+    <thead>
+        <tr style="background-color:#f8f9fa; border-bottom:2px solid #e0e0e0;">
+            <th style="padding:12px 15px; text-align:left; font-weight:600; color:#333; min-width:120px;">Attribute</th>
+            <th style="padding:12px 15px; text-align:left; font-weight:600; color:#333;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom:1px solid #e0e0e0;">
+            <td style="padding:12px 15px; font-weight:500; color:#555;">📚 Framework</td>
+            <td style="padding:12px 15px;">PyTorch, PyTorch Geometric, Scikit-learn</td>
+        </tr>
+        <tr style="border-bottom:1px solid #e0e0e0;">
+            <td style="padding:12px 15px; font-weight:500; color:#555;">🧠 Models Used</td>
+            <td style="padding:12px 15px;">Graph Convolutional Network (GCN), Relational GCN</td>
+        </tr>
+        <tr style="border-bottom:1px solid #e0e0e0;">
+            <td style="padding:12px 15px; font-weight:500; color:#555;">📷 Input Format</td>
+            <td style="padding:12px 15px;">Drone-captured Images (~256×256 px)</td>
+        </tr>
+        <tr style="border-bottom:1px solid #e0e0e0;">
+            <td style="padding:12px 15px; font-weight:500; color:#555;">🎯 Output</td>
+            <td style="padding:12px 15px;">4-Class Image Classification</td>
+        </tr>
+        <tr style="border-bottom:1px solid #e0e0e0;">
+            <td style="padding:12px 15px; font-weight:500; color:#555;">🧪 File</td>
+            <td style="padding:12px 15px;"><code>gcn-code.ipynb</code></td>
+        </tr>
+        <tr>
+            <td style="padding:12px 15px; font-weight:500; color:#555;">📁 Dataset Source</td>
+            <td style="padding:12px 15px;"><a href="https://data.mendeley.com/datasets/hkbgh5s3b7/1" target="_blank" style="color:#1a73e8; text-decoration:none;">Soybean Leaf Dataset (Kaggle)</a></td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 
