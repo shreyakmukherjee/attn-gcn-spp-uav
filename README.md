@@ -29,11 +29,19 @@ This project proposes a novel pipeline that integrates **Attention-enhanced Grap
 The model begins by taking an input image and extracting features using two lightweight convolutional neural network backbones: EfficientNet-B0 and ShuffleNetV2, which generate feature vectors of dimensions 1280 *1024 respectively. These features are then combined through concatenation to form a single fused feature vector. This fused vector is passed through a Spatial Pyramid Pooling (SPP) layer, which transforms it into a fixed-size feature representation. The resulting vector is fed into the first layer of a Graph Convolutional Network (GCN), which computes intermediate feature representations. These intermediate features are further refined using an attention mechanism that highlights the most important information. In the second GCN layer, the model combines the attention-enhanced features with the earlier intermediate features using element-wise operations, activation functions, and a skip connection to retain useful information from previous layers. The final set of features is passed to a fully connected layer with a softmax activation function to classify the image into one of four categories: Healthy, Pest Attack, Rust, or Mosaic.
 
 
-<img src="System_Architecture_Images/Flow_Diagram.png" height="220px">
+<img src="System_Architecture_Images/Flow_Diagram.png" height="350px" width="50%">
 
 
 ---
 
+## Model Architecture
+The presented model architecture integrates Spatial Pyramid Pooling (SPP), Graph Convolutional Networks (GCN), and an Attention Module to effectively classify input features and produce output images. Initially, input features are processed through SPP to extract multi-scale spatial information and generate a fixed-size feature vector. This vector is passed into GCN Layer 1, which comprises multiple hidden layers with ReLU activation and outputs intermediate features (H₁). These intermediate features are then fed into an attention module that assigns weights, resulting in weighted features (A). Both H₁ and A are combined and processed through GCN Layer 2, which also uses ReLU-activated hidden layers to produce enhanced features (H₂). Simultaneously, a skip path directly transfers H₁ to the final stage, where it is added to H₂ to retain essential information. The enhanced output is passed through a fully connected layer followed by softmax activation to generate the final classified output image. This architecture benefits from multi-scale spatial context, attention-driven feature weighting, and skip connections for improved performance and robustness.
+
+
+<img src="https://github.com/suman2896/attn-gcn-spp-uav/blob/a5ec346ae93b6ee4bd9bf09dc22100e4b25ff7c0/System_Architecture_Images/Model_Architecture.png" height="350px" width="50%">
+
+
+---
 
 
 ## 🗂 Dataset Overview
