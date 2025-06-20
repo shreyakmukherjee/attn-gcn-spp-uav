@@ -1,5 +1,4 @@
-<h1 > 🌿 Attention-Enhanced GCN with SPP for
- UAV-Captured Plant Imagery </h1>
+<h1 align="center">🌿 Attention-Enhanced GCN with SPP for UAV-Captured Plant Imagery</h1>
 
 In precision agriculture, early and accurate detection of crop diseases is vital for increasing yield and minimizing losses. Traditional deep learning models such as CNNs often overlook spatial and topological relationships in plant structures, especially in high-resolution UAV-captured images.
 
@@ -15,12 +14,12 @@ This project proposes a novel pipeline that integrates **Attention-enhanced Grap
 
 | Attribute       | Description                                                                 |
 |-----------------|-----------------------------------------------------------------------------|
-| **📚 Framework** | PyTorch, PyTorch Geometric, Scikit-learn                                   |
-| **🧠 Models Used** | Graph Convolutional Network (GCN), Relational GCN                          |
+| **📚 Framework** | PyTorch, PyTorch Geometric, Scikit-learn , Numpy, Pandas, Seaborn, Matplotlib                                  |
+| **🧠 Models Used** | Graph Convolutional Network (GCN), Ensenble CNN (ShuffleNet_V2, EfficientNet_B0)                           |
 | **📷 Input Format** | Drone-captured Images (~256×256 px)                                      |
-| **🎯 Output**   | 4-Class Image Classification                                               |
+| **🎯 Output**   | 4-Class Image Classification (Healthy, Mosaic, Rust, Pest)                                              |
 | **🧪 File**     | `gcn-code.ipynb`                                                           |
-| **📁 Dataset Source** | [Soybean Leaf Dataset (Kaggle)](https://data.mendeley.com/datasets/hkbgh5s3b7/1) |
+| **📁 Dataset Source** | [Soybean Leaf Dataset](https://data.mendeley.com/datasets/hkbgh5s3b7/1) |
 
 </div>
 
@@ -37,26 +36,25 @@ The model begins by taking an input image and extracting features using two ligh
 
 ---
 
-## Model Architecture
+## 🧠 Model Architecture
 The presented model architecture integrates Spatial Pyramid Pooling (SPP), Graph Convolutional Networks (GCN), and an Attention Module to effectively classify input features and produce output images. Initially, input features are processed through SPP to extract multi-scale spatial information and generate a fixed-size feature vector. This vector is passed into GCN Layer 1, which comprises multiple hidden layers with ReLU activation and outputs intermediate features (H₁). These intermediate features are then fed into an attention module that assigns weights, resulting in weighted features (A). Both H₁ and A are combined and processed through GCN Layer 2, which also uses ReLU-activated hidden layers to produce enhanced features (H₂). Simultaneously, a skip path directly transfers H₁ to the final stage, where it is added to H₂ to retain essential information. The enhanced output is passed through a fully connected layer followed by softmax activation to generate the final classified output image. This architecture benefits from multi-scale spatial context, attention-driven feature weighting, and skip connections for improved performance and robustness.
 
 
 <p align="center">
-  <img src="System_Architecture_Images/Model_Architecture.png" height="400px" width="70%">
+  <img src="System_Architecture_Images/Model_Architecture.png" style="max-width: 90%; height: auto;" />
 </p>
 
 
 
 ---
 
+## <div align="center">🗂 Dataset Overview</div>
 
-## 🗂 Dataset Overview
+The **MH-SoyaHealthVision** dataset is a comprehensive resource for integrated crop health assessment in soybean farming. It combines **ground-level leaf images** and **UAV-captured aerial images** from soybean fields in the Maharashtra region. This dual-perspective approach enables effective disease and pest detection using deep learning.
 
-This dataset includes drone-captured images of soybean plants from various growth stages, classified into four types based on the disease:
+### <div align="center">📊 Class Distribution</div>
 
-<h3 >📊 Class Distribution</h3>
-
-<table >
+<table align="center">
   <tr>
     <td align="center"><img src="Sample_Input_Images/healthy.jpg" width="120px"></td>
     <td align="center"><img src="Sample_Input_Images/rust.jpg" width="120px"></td>
@@ -71,10 +69,19 @@ This dataset includes drone-captured images of soybean plants from various growt
   </tr>
 </table>
 
-- Total Images: ~1,000+  
-- Format: `.jpg`  
-- Structure: Class-wise folders  
-- Preprocessing: Resizing, patch extraction, graph construction  
+The dataset includes:
+
+- **High-resolution images of soybean leaves** showing signs of rust, mosaic virus, septoria brown spot, frog-eye leaf spot, and pest attacks (e.g., caterpillars and semiloopers).
+- **UAV-based aerial images** capturing large-scale field patterns of rust, mosaic virus, and pest infestations.
+
+These images are categorized into respective folders for each class, making it suitable for both classification and segmentation tasks.
+
+📦 **Total Images:** 5,680  
+🖼 **Format:** `.jpg`  
+🗃 **Structure:** Class-wise folders  
+🧪 **Preprocessing:** Resizing, patch extraction, graph construction  
+📥 **Download Link:** [MH-SoyaHealthVision Dataset on Mendeley](https://data.mendeley.com/datasets/hkbgh5s3b7/1)
+
 
 ---
 
