@@ -25,6 +25,16 @@ This project proposes a novel pipeline that integrates **Attention-enhanced Grap
 </div>
 
 ---
+## 🌿 Workflow Diagram
+The model begins by taking an input image and extracting features using two lightweight convolutional neural network backbones: EfficientNet-B0 and ShuffleNetV2, which generate feature vectors of dimensions 1280 and 1024 respectively. These features are then combined through concatenation to form a single fused feature vector. This fused vector is passed through a Spatial Pyramid Pooling (SPP) layer, which transforms it into a fixed-size feature representation. The resulting vector is fed into the first layer of a Graph Convolutional Network (GCN), which computes intermediate feature representations. These intermediate features are further refined using an attention mechanism that highlights the most important information. In the second GCN layer, the model combines the attention-enhanced features with the earlier intermediate features using element-wise operations, activation functions, and a skip connection to retain useful information from previous layers. The final set of features is passed to a fully connected layer with a softmax activation function to classify the image into one of four categories: Healthy, Pest Attack, Rust, or Mosaic.
+
+
+<img src="System_Architecture_Images/Flow_Diagram.png" height="220px">
+
+
+---
+
+
 
 ## 🗂 Dataset Overview
 
