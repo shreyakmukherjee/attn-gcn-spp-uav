@@ -10,7 +10,7 @@ This project proposes a novel pipeline that integrates **Attention-enhanced Grap
 ---
 
 ## 🧾 Project Overview
-<div style="width:100%; overflow-x:auto; margin:1em 0; font-family:Arial, sans-serif;">
+<div style="width:100%; overflow-x:auto; margin:1em 0; font-family:Arial, sans-serif;" align = "center">
 
 | Attribute       | Description                                                                 |
 |-----------------|-----------------------------------------------------------------------------|
