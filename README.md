@@ -130,7 +130,7 @@ These images are categorized into respective folders for each class, making it s
 
 <table>
   <tr><th>Metric</th><th>Value</th></tr>
-  <tr><td>✅ Final Accuracy</td><td><b>94.50%</b></td></tr>
+  <tr><td>✅ Final Accuracy</td><td><b>97.06%</b></td></tr>
   <tr><td>🔍 ROC-AUC</td><td><b>0.96 (macro avg)</b></td></tr>
   <tr><td>📉 Final Loss</td><td><b>0.217</b></td></tr>
   <tr><td>📊 Confusion Matrix</td><td>4×4</td></tr>
